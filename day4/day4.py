@@ -14,10 +14,10 @@ def check_eyr(eyr):
 
 
 def check_hgt(hgt):
-    if hgt[len(hgt) - 2:] == "cm":
+    if hgt[-2:] == "cm":
         if 150 <= int(hgt.split("cm")[0]) <= 193:
             return True
-    elif hgt[len(hgt) - 2:] == "in":
+    elif hgt[-2:] == "in":
         if 59 <= int(hgt.split("in")[0]) <= 76:
             return True
 
